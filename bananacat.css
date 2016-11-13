@@ -1,0 +1,149 @@
+
+  /*!
+ - * Animate.css -http://daneden.me/animate
+ + * animate.css -http://daneden.me/animate
+   * Version - 3.4.0
+   * Licensed under the MIT license - http://opensource.org/licenses/MIT
+   *
+   * Copyright (c) 2015 Daniel Eden
+   */
+
+img {
+  width:200px;
+  position: relative;
+  margin: 20px;
+  padding: 30px;
+};
+
+.right {
+  float:right;
+  margin-top:60px;
+  margin-right:20px;
+}
+
+.touch {
+  margin:15px;
+}
+
+#city {
+  display:none;
+}
+
+#ball {
+    height: 100px;
+    width: 100px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 100%;
+    background-color: #008800;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#003500), to(#008800));
+    background-image: -webkit-linear-gradient(left, #003500, #008800); 
+    background-image:    -moz-linear-gradient(left, #003500, #008800);
+    background-image:     -ms-linear-gradient(left, #003500, #008800);
+    background-image:      -o-linear-gradient(left, #003500, #008800);
+}
+
+#ball.red {
+    background-color: red;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#330000), to(#CC0000));
+    background-image: -webkit-linear-gradient(left, #330000, #CC0000); 
+    background-image:    -moz-linear-gradient(left, #330000, #CC0000);
+    background-image:     -ms-linear-gradient(left, #330000, #CC0000);
+    background-image:      -o-linear-gradient(left, #330000, #CC0000);
+}
+
+p {
+  padding: 0px 20px;
+}
+
+h4 {
+  font-weight:bold;
+  font-style:italic;
+  padding: 10px;
+}
+
+.stars {
+  background-image: url("http://wallpapercave.com/wp/xX2GRj6.gif");
+  height:500px;
+  position:relative;
+  margin: 20px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  
+}
+
+
+
+.opacity {
+  opacity:0.05;
+}
+
+.opacity:hover {
+  opacity:1.0;
+  top: -40px;
+}
+
+.cloud {
+  opacity: 0.1;
+}
+
+.hvr-radial-out {
+  display: block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098D1;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+  color: white;
+}
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+.full-size {
+  width:auto;
+}
+
+.medium-size{
+  width:50%;
+}
+
+.zoomInDown {
+  animation-duration: 1s;
+}
+
+.dogloop:hover {
+  transform:rotate(180deg);
+  transition: transform 4s cubic-bezier;
+}
